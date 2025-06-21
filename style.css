@@ -1,0 +1,255 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: arial,sans-serif;
+    min-height: 394px;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 20px;
+    align-items: center;
+    background-color: #eeeeee;
+    height: 100px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    width: 100%;
+    z-index: 1000;
+}
+.nav-links{
+    display: flex;
+    list-style: none;
+    gap: 10px;
+    text-transform: capitalize;
+}
+.nav-links li{
+    padding: 5px;
+}
+.nav-links a{
+    font-size: 18px;
+    
+    font-weight: bold;
+}
+a:link{
+    text-decoration: none;
+}
+.toggle{
+    display: none;
+}
+.li-orange{
+    background-color: orangered;
+    border-radius: 15px;
+}
+.li-orange a{
+    color: white;
+}
+.logo{
+    font-size: 18px;
+}
+/* voici le code de responsive disign */
+main{
+    margin-top: 100px;
+}
+ 
+
+/* le div1 commence ici */
+.div1{
+    height: 600px;
+    background-image: url("./image/back1.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+    padding: 2rem;
+}
+.div1-title{
+    color: white;
+    font-weight: bold;
+    margin-top: 80px;
+}
+.div1-start{
+    display: inline-block;
+    width: 300px;
+    vertical-align: top;
+    color: white;
+    font-weight: bold;
+    margin-left: -4px;
+}
+.div1-center{
+    display: inline-block;
+    margin-left: -4px;
+    width: 300px;
+    vertical-align: top;
+    color: white;
+    font-weight: bold;
+}
+.div1-end{
+    display: inline-block;
+    margin-left: -4px;
+    width: 300px;
+    vertical-align: top;
+    color: white;
+    font-weight: bold;
+}
+.btn1{
+    background-color: white;
+    border-radius: 1rem;
+    padding: 7px 10px;
+    margin-top: 10px;
+    font-size: 18px;
+    width:150px;
+    position: relative;
+    border: none;
+    z-index: 100;
+    
+   
+}
+.btn1::before{
+    width: 0%;
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    border-radius: 1rem;
+    z-index: 0;
+    background-color: rgba(255,255, 0, 0.5);
+    transition: width 700ms;
+}
+
+.btn1:hover::before{
+    width: 100%;
+    box-shadow: 0px 0px  15px rgba(255,255, 0, 0.5);
+}
+p{
+    font-weight:100;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+/* le css de div2 commence ici */
+.div2{
+    text-align: center;
+    padding: 20px;
+}
+.div2-title{
+    margin-bottom: 20px;
+}
+.div2-start{
+    display: inline-block;
+    width: 300px;
+    vertical-align: top;
+}
+.div2-center{
+    display: inline-block;
+    width: 300px;
+    margin-left: -4px;
+    vertical-align: top;
+}
+.div2-end{
+    display: inline-block;
+    width: 300px;
+    margin-left: -4px;
+    vertical-align: top;
+}
+
+/* le div3 commence ici */
+.div3{
+    height: 250px;
+    background-image: url("./image/back.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    text-align: center;
+    color: white;
+    padding-top:50px;
+
+}
+.div3-contain{
+    width: 40%;
+    text-align: center;
+    position: relative;
+    left: 30%;
+    margin-bottom: 20px;
+}
+.form1{
+    display: flex; justify-content: center; background-color: transparent;
+}
+.form1 input{
+    padding: 10px; border-radius: 15px; background-color: transparent; outline: none; border: 1px solid white; width: 250px;
+}
+.btn2{
+    padding: 10px 20px; margin-left: -80px; width: 150px; border-radius: 15px; border: none; color:brown;
+}
+::placeholder{
+    color: white;
+}
+/* le div4 commence ici */
+.div4{
+    padding: 20px;
+}
+.div4-contain1{
+    width: 400px;
+    position: relative;
+    left: 300px;
+}
+.btn3{
+    padding: 7px;
+    background-color: brown;
+    color: white;
+    border-radius: 15px;
+    width: 100px;
+    border: none;
+    margin-top: 10px;
+}
+.div4-contain2{
+    width: 400px;
+    position: relative;
+    left: 700px;
+
+}
+.btn4{
+    padding: 7px;
+    background-color: blue;
+    color: white;
+    border-radius: 15px;
+    width: 100px;
+    margin-top: 10px;
+}
+/* le div5 commence ici */
+.div5{
+
+    text-align: center;
+    height: 150px;
+    padding: 10px;
+    background-color: orangered;
+}
+
+.div5-start, .div5-center, .div5-end{
+    width: 200Px;
+    display: inline-block;
+    padding: 10px;
+}
+ul>.li2 {
+    text-decoration: none;
+    list-style: none;
+
+}
+ul>.li2 a{
+    color:white;
+}
+/* le div6 commence ici */
+.div6{
+    text-align: center;
+    padding-top: 70px;
+    height: 150px;
+    background-image: url(./image/Layer\ 5.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: left;
+}
+

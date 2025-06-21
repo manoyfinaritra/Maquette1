@@ -1,0 +1,254 @@
+@media(max-width:600px) {
+    .nav-links {
+        display: none;
+    }
+    .toggle{
+        display: block;
+        cursor: pointer;
+    }
+    .nav-links.active{
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+    .nav-links a{
+        text-decoration: none;
+        font-size: 13px;
+        font-weight: bold;
+    }
+    .nav-links li{
+        padding: 1px 6px;
+    }
+
+
+    .div1 {
+        height: 400px;
+        background-size: cover;
+        padding: 3px;
+        background-position: center;
+    }
+
+    .div1-title {
+        margin-top: 20px;
+        font-size: 13px;
+    }
+
+    .div1-start {
+        width: 100px;
+    }
+
+    .div1-center,
+    .div1-end {
+        width: 100px;
+    }
+
+    .img1 {
+        width: 60px;
+    }
+
+    h2 {
+        font-size: 16px;
+    }
+
+    .p1 {
+        font-size: 11px;
+    }
+
+    /* div2 */
+    .div2{
+        border: 1px solid black;
+        padding-top: 20px;
+    }
+    .div2-start,
+    .div2-center {
+        margin-bottom: 20px;
+    }
+    .div2-start,
+    .div2-center,.div2-end {
+        width: 100%;
+    }
+
+    .img2 {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    /* le div3 commence ici */
+    .div3 {
+        height: 200px;
+        padding-top: 1px;
+
+    }
+
+    .div3-contain {
+        padding-top: 10px;
+        width: 80%;
+        left: 10%;
+        margin-bottom:5px;
+    }
+
+    /* le div4 commence ici */
+    .div4 {
+        padding: 20px;
+    }
+
+    .div4-contain1 {
+        width: 50%;
+        position: relative;
+        left: 10%;
+    }
+
+    .btn3 {
+        margin-top: 10px;
+        padding: 5px;
+    }
+
+    .div4-contain2 {
+        margin-top: 10px;
+        width: 50%;
+        position: relative;
+        left: 45%;
+
+    }
+
+    .btn4 {
+        padding: 5px;
+        width: 100px;
+        margin-top: 10px;
+    }
+
+    /* le div5 commence ici */
+    .div5 {
+        text-align: center;
+        height: 150px;
+        padding: 0px;
+        background-color: orangered;
+    }
+    .div5-start, .div5-center, .div5-end{
+        width: 120px;
+        display: inline-block;
+        padding: 4px;
+        padding-top: 20px;
+    }
+
+}
+
+
+/* pour le tablette */
+
+@media(min-width:601px) and (max-width : 1024px){
+    .div1 {
+        height: 500px;
+        padding: 3px;
+        background-position: center;
+    }
+
+    .div1-title {
+        margin-top: 60px;
+        font-size: 15px;
+    }
+
+    .div1-start {
+        width: 30%;
+    }
+
+    .div1-center,
+    .div1-end {
+        width: 30%;
+    }
+
+    .img1 {
+        width: 60%;
+    }
+
+    h2 {
+        font-size: 22px;
+    }
+
+    .p1 {
+        font-size: 13px;
+    }
+
+    /* div2 */
+    /* .div2{
+        border: 1px solid black;
+        padding-top: 20px;
+    } */
+    .div2-start,
+    .div2-center {
+        margin-bottom: 20px;
+    }
+    .div2-start,
+    .div2-center,.div2-end {
+        width: 30%;
+    }
+
+    .img2 {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    /* le div3 commence ici */
+    .div3 {
+        height: 200px;
+        padding-top: 1px;
+
+    }
+
+    .div3-contain {
+        padding-top: 30px;
+        width: 80%;
+        left: 10%;
+        margin-bottom: 20px;
+    }
+
+    .div3-form1-input {
+        border: 1px solid white;
+        width: 50%;
+        position: relative;
+        left:25%
+    }
+    /* le div4 commence ici */
+    .div4 {
+        padding: 20px;
+        border: 1px solid black;
+    }
+
+    .div4-contain1 {
+        width: 40%;
+        position: relative;
+        left: 10%;
+    }
+
+    .btn3 {
+        margin-top: 10px;
+        padding: 5px;
+    }
+
+    .div4-contain2 {
+        margin-top: 10px;
+        width: 40%;
+        position: relative;
+        left: 50%;
+
+    }
+
+    .btn4 {
+        padding: 5px;
+        width: 100px;
+        margin-top: 10px;
+    }
+
+    /* le div5 commence ici */
+    .div5 {
+        text-align: center;
+        height: 150px;
+        padding: 0px;
+        background-color: orangered;
+    }
+    .div5-start, .div5-center, .div5-end{
+        width: 120px;
+        display: inline-block;
+        padding: 4px;
+        padding-top: 20px;
+    }
+
+}
