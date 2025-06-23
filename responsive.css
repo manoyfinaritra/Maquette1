@@ -22,28 +22,37 @@
 
 
     .div1 {
-        height: 400px;
+        height: auto;
         background-size: cover;
         padding: 3px;
         background-position: center;
+        text-align: center;
     }
 
     .div1-title {
-        margin-top: 20px;
-        font-size: 13px;
+        margin-top: 5px;
+        font-size: 10px;
     }
 
     .div1-start {
-        width: 100px;
+        width:100%;
+        padding: 20px;
     }
-
+    .div1-center{
+        margin-top: -10px;
+    }
     .div1-center,
     .div1-end {
-        width: 100px;
+        width: 100%;
+        padding: 10px 40px;
     }
 
     .img1 {
-        width: 60px;
+        width: 20%;
+    }
+    .div1-start-text,.div1-center-text,.div1-end-text{
+        width: 50%;
+        margin: auto;
     }
 
     h2 {
@@ -54,9 +63,14 @@
         font-size: 11px;
     }
 
+    .btn1{
+        padding: 5px 10px;
+        font-size: 15px;
+        width: auto;
+        margin-bottom: 10px;
+    }
     /* div2 */
     .div2{
-        border: 1px solid black;
         padding-top: 20px;
     }
     .div2-start,
@@ -66,10 +80,147 @@
     .div2-start,
     .div2-center,.div2-end {
         width: 100%;
+        padding: 20px;
+    }
+
+    .img2,.img2-end {
+        width: 50%;
+        margin-bottom: 10px;
+    }
+    /* le div3 commence ici */
+    .div3 {
+        height: auto;
+        padding:20px;
+        vertical-align: top;
+
+    }
+
+    .div3-contain {
+        padding-top: 10px;
+        width: 80%;
+        left: 10%;
+        margin-bottom:5px;
+    }
+
+    /* le div4 commence ici */
+    .div4 {
+        padding: 0px;
+    }
+
+    .div4-contain1,.div4-contain2 {
+        width: 100%;
+        text-align: center;
+        height: 200px;
+    }
+    .div4-contain1-left{
+        width: 80%;
+        padding-top: 35px;
+        margin: auto;
+    }
+    .div4-contain1-right,.div4-contain2-left{
+        display: none
+    }
+    .div4-contain2-right{
+        width: 80%;
+        padding-top: 35px;
+        margin: auto;
+    }
+    
+    .btn3 {
+        margin-top: 10px;
+        padding: 5px;
+    }
+
+    
+
+    .btn4 {
+        padding: 5px;
+        width: 100px;
+        margin-top: 10px;
+    }
+
+    /* le div5 commence ici */
+    .div5 {
+        text-align: center;
+        height: auto;
+        padding: 0px;
+        background-color: orangered;
+        padding-bottom: 10px;
+    }
+    .div5-start, .div5-center, .div5-end{
+        width: 100%;
+        padding: 4px;
+        padding-top: 14px;
+    }
+
+}
+
+
+/* pour le tablette */
+
+@media(min-width:601px) and (max-width : 1024px){
+    .div1 {
+        height: auto;
+        padding: 3px;
+        background-position: center;
+    }
+
+    .div1-title {
+        margin-top: 1px;
+        font-size: 14px;
+    }
+
+    .div1-end {
+        width: 50%;
+    }
+
+    .div1-start,.div1-center{
+        width: 30%;
+    }
+
+    .img1 {
+        width: 50%;
+    }
+    .img1-end{
+        width: 30%;
+    }
+
+    h2 {
+        font-size: 22px;
+    }
+
+    .p1 {
+        font-size: 13px;
+    }
+    .btn1{
+        margin-bottom: 5px;
+        padding: 5px 0px;
+    }
+
+    /* div2 */
+    /* .div2{
+        border: 1px solid black;
+        padding-top: 20px;
+    } */
+    .div2-start,
+    .div2-center {
+        margin-bottom: 20px;
+        margin-left:10px;
+    }
+    .div2-start,
+    .div2-center,.div2-end {
+        width: 40%;
+    }
+    .div2-end{
+        width: 60%;
     }
 
     .img2 {
-        width: 100%;
+        width: 80%;
+        margin-bottom: 10px;
+    }
+    .img2-end{
+        width: 50%;
         margin-bottom: 10px;
     }
     /* le div3 commence ici */
@@ -83,120 +234,6 @@
         padding-top: 10px;
         width: 80%;
         left: 10%;
-        margin-bottom:5px;
-    }
-
-    /* le div4 commence ici */
-    .div4 {
-        padding: 20px;
-    }
-
-    .div4-contain1 {
-        width: 50%;
-        position: relative;
-        left: 10%;
-    }
-
-    .btn3 {
-        margin-top: 10px;
-        padding: 5px;
-    }
-
-    .div4-contain2 {
-        margin-top: 10px;
-        width: 50%;
-        position: relative;
-        left: 45%;
-
-    }
-
-    .btn4 {
-        padding: 5px;
-        width: 100px;
-        margin-top: 10px;
-    }
-
-    /* le div5 commence ici */
-    .div5 {
-        text-align: center;
-        height: 150px;
-        padding: 0px;
-        background-color: orangered;
-    }
-    .div5-start, .div5-center, .div5-end{
-        width: 120px;
-        display: inline-block;
-        padding: 4px;
-        padding-top: 20px;
-    }
-
-}
-
-
-/* pour le tablette */
-
-@media(min-width:601px) and (max-width : 1024px){
-    .div1 {
-        height: 500px;
-        padding: 3px;
-        background-position: center;
-    }
-
-    .div1-title {
-        margin-top: 60px;
-        font-size: 15px;
-    }
-
-    .div1-start {
-        width: 30%;
-    }
-
-    .div1-center,
-    .div1-end {
-        width: 30%;
-    }
-
-    .img1 {
-        width: 60%;
-    }
-
-    h2 {
-        font-size: 22px;
-    }
-
-    .p1 {
-        font-size: 13px;
-    }
-
-    /* div2 */
-    /* .div2{
-        border: 1px solid black;
-        padding-top: 20px;
-    } */
-    .div2-start,
-    .div2-center {
-        margin-bottom: 20px;
-    }
-    .div2-start,
-    .div2-center,.div2-end {
-        width: 30%;
-    }
-
-    .img2 {
-        width: 100%;
-        margin-bottom: 10px;
-    }
-    /* le div3 commence ici */
-    .div3 {
-        height: 200px;
-        padding-top: 1px;
-
-    }
-
-    .div3-contain {
-        padding-top: 30px;
-        width: 80%;
-        left: 10%;
         margin-bottom: 20px;
     }
 
@@ -208,11 +245,10 @@
     }
     /* le div4 commence ici */
     .div4 {
-        padding: 20px;
-        border: 1px solid black;
+        padding: 10px;
     }
 
-    .div4-contain1 {
+    /* .div4-contain1 {
         width: 40%;
         position: relative;
         left: 10%;
@@ -229,6 +265,24 @@
         position: relative;
         left: 50%;
 
+    } */
+    .div4-contain1,.div4-contain2 {
+        width: 100%;
+        text-align: center;
+        height: 200px;
+    }
+    .div4-contain1-left{
+        width: 80%;
+        padding-top: 35px;
+        margin: auto;
+    }
+    .div4-contain1-right,.div4-contain2-left{
+        display: none
+    }
+    .div4-contain2-right{
+        width: 80%;
+        padding-top: 35px;
+        margin: auto;
     }
 
     .btn4 {

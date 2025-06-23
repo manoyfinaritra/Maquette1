@@ -135,6 +135,7 @@ p{
 .div2{
     text-align: center;
     padding: 20px;
+    background-color: #eeeeee;
 }
 .div2-title{
     margin-bottom: 20px;
@@ -155,6 +156,16 @@ p{
     width: 300px;
     margin-left: -4px;
     vertical-align: top;
+}
+.reademore{
+    padding: 10px 20px;
+    margin-top: 7px;
+    border: none;
+    border-radius: 15px;
+    background-color: #fff;
+    text-transform: capitalize;
+    font-weight: 500;
+
 }
 
 /* le div3 commence ici */
@@ -193,10 +204,27 @@ p{
     padding: 20px;
 }
 .div4-contain1{
-    width: 400px;
-    position: relative;
-    left: 300px;
+    width: 100%;
+   
 }
+.div4-contain1-left,
+.div4-contain1-right{
+    width: 30%;
+    height: 300px;
+    display: inline-block;
+    vertical-align: top;
+    
+}
+.div4-contain1-left{
+    margin-left: 200px;
+    padding-top: 70px;
+}
+.div4-contain1-right{
+    margin-left: 140px;
+    border: 1px solid rgba(83, 80, 80,0.2);
+
+}
+
 .btn3{
     padding: 7px;
     background-color: brown;
@@ -207,10 +235,24 @@ p{
     margin-top: 10px;
 }
 .div4-contain2{
-    width: 400px;
-    position: relative;
-    left: 700px;
+    width: 100%;
 
+}
+.div4-contain2-left,.div4-contain2-right{
+    width: 30%;
+    height: 300px;
+    display: inline-block;
+    vertical-align: top;
+}
+.div4-contain2-left{
+    margin-left: 140px;
+    border: 1px solid rgba(83, 80, 80,0.2);
+
+  
+}
+.div4-contain2-right{
+    margin-left: 200px;
+    padding-top: 70px;
 }
 .btn4{
     padding: 7px;
@@ -222,7 +264,6 @@ p{
 }
 /* le div5 commence ici */
 .div5{
-
     text-align: center;
     height: 150px;
     padding: 10px;
@@ -247,9 +288,10 @@ ul>.li2 a{
     text-align: center;
     padding-top: 70px;
     height: 150px;
-    background-image: url(./image/Layer\ 5.png);
+    background-image: url(./image/back.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: left;
+    padding: 30px;
 }
 
